@@ -39,14 +39,14 @@ export const Hero = () => {
                 <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
               </span>
             </a>
-            <a
-            href="/JAHNAVIRESUME.PDF"
-              download
-              className="px-8 py-4 rounded-xl glass-strong text-foreground font-semibold flex items-center gap-2 hover:shadow-neon-blue hover:scale-105 transition-all"
-            >
-              <Download className="w-4 h-4" />
-              Download Resume
-            </a>
+        <a
+  href="/JAHNAVIRESUME.PDF"
+  download
+  className="px-8 py-4 rounded-xl glass-strong text-foreground font-semibold flex items-center gap-2 hover:shadow-neon-blue hover:scale-105 transition-all"
+>
+  <Download className="w-4 h-4" />
+  Download Resume
+</a>
           </div>
 
           <div className="flex items-center justify-center gap-4 pt-6">
