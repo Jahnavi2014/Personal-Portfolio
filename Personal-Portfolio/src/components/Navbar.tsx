@@ -18,6 +18,7 @@ export const Navbar = () => {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
+
       const sections = links.map(l => l.href.slice(1));
       for (const id of sections) {
         const el = document.getElementById(id);
@@ -30,21 +31,30 @@ export const Navbar = () => {
         }
       }
     };
+
     window.addEventListener("scroll", onScroll);
     onScroll();
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-500", scrolled ? "py-3" : "py-5")}>
+    <nav className={cn(
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+      scrolled ? "py-3" : "py-5"
+    )}>
       <div className="container">
-        <div className={cn("glass rounded-2xl px-6 py-3 flex items-center justify-between transition-all", scrolled && "shadow-elevated")}>
+        <div className={cn(
+          "glass rounded-2xl px-6 py-3 flex items-center justify-between transition-all",
+          scrolled && "shadow-elevated"
+        )}>
 
+          {/* Logo */}
           <a href="#home" className="font-mono text-lg font-bold text-gradient">
             Jahnavi
           </a>
 
-          {/* Desktop */}
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-1">
             {links.map(link => (
               <a
@@ -64,26 +74,31 @@ export const Navbar = () => {
               </a>
             ))}
 
-            {/* ✅ FIXED */}
+            {/* ✅ FIXED RESUME BUTTON */}
             <a
               href="/JAHNAVIRESUME.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Jahnavi_Resume.pdf"
               className="ml-2 px-4 py-2 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold flex items-center gap-2 hover:shadow-neon transition-all"
             >
-              <Download className="w-4 h-4" /> Resume
+              <Download className="w-4 h-4" />
+              Resume
             </a>
           </div>
 
-          {/* Mobile menu button */}
-          <button className="md:hidden text-foreground" onClick={() => setOpen(!open)} aria-label="Menu">
+          {/* Mobile Button */}
+          <button
+            className="md:hidden text-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Menu"
+          >
             {open ? <X /> : <Menu />}
           </button>
         </div>
 
-        {/* Mobile */}
+        {/* Mobile Menu */}
         {open && (
           <div className="md:hidden glass mt-2 rounded-2xl p-4 flex flex-col gap-2 animate-fade-in">
+
             {links.map(link => (
               <a
                 key={link.href}
@@ -100,15 +115,16 @@ export const Navbar = () => {
               </a>
             ))}
 
-            {/* ✅ FIXED */}
+            {/* ✅ FIXED MOBILE RESUME */}
             <a
               href="/JAHNAVIRESUME.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Jahnavi_Resume.pdf"
               className="px-4 py-3 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold flex items-center justify-center gap-2"
             >
-              <Download className="w-4 h-4" /> Download Resume
+              <Download className="w-4 h-4" />
+              Download Resume
             </a>
+
           </div>
         )}
       </div>
