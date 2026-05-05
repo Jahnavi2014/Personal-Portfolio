@@ -35,7 +35,7 @@ export const About = () => {
     
                 <div className="relative glass-strong rounded-3xl w-full h-full overflow-hidden">
                 <img
-                  src="/public/profile.png"
+                  src="/profile.png"
                   alt="Gangavarapu Jahnavi Chowdhary portrait"
                   className="w-full h-full object-cover"
                   loading="lazy"
