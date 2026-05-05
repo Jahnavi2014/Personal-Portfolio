@@ -62,9 +62,6 @@ export const Contact = () => {
     });
 };
 
-
-
-
   
   return (
     <section id="contact" className="py-24 relative">
@@ -76,13 +73,20 @@ export const Contact = () => {
               Let's build <span className="text-gradient">something great</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Have a project in mind or just want to say hi? Drop me a message.
+              Drop me a message.
             </p>
           </div>
         </Reveal>
 
         <div className="grid md:grid-cols-5 gap-8">
           <Reveal className="md:col-span-2 space-y-6">
+           <div className="glass rounded-2xl p-6">
+              <Mail className="w-8 h-8 text-accent mb-3" />
+              <h3 className="font-bold mb-1">Email</h3>
+              <a href="mailto:jahnavi@example.com" className="text-sm text-muted-foreground hover:text-foreground">
+                jahnavichowdhary2014@gmail.com
+              </a>
+            </div>
             
             <div className="glass rounded-2xl p-6">
               <h3 className="font-bold mb-4">Find me on</h3>
