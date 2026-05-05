@@ -10,7 +10,7 @@ const projects = [
     tech: ["Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "HTML", "CSS"],
     image: "https://img.freepik.com/free-photo/african-american-female-doctor-showing-couple-test-results-their-medical-exam-clinic_637285-1158.jpg?semt=ais_hybrid&w=740&q=80",
     github: "https://github.com/Jahnavi2014/Medicine-Recommendation-System",
-    demo: "http://127.0.0.1:5000/",
+    demo: "https://medicine-recommendation-system-iepy.onrender.com",
     category: "fullstack",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     tech: ["HTML","CSS", "JavaScript"],
     image: "https://9to5google.com/wp-content/uploads/sites/4/2023/06/google-weather-pixel-tablet.jpeg?quality=82&strip=all",
     github: "https://github.com/Jahnavi2014/Weather-App",
-    demo: "http://127.0.0.1:5500/index.html",
+    demo: "https://weather-app-ten-lilac-4g8cipqqjt.vercel.app/",
     category: "frontend",
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     tech: ["HTML5","CSS3" , "JavaScript" ,"Bootstrap / animations"],
     image: "https://png.pngtree.com/thumb_back/fw800/background/20251117/pngtree-diverse-group-of-friends-stretching-and-smiling-during-a-fun-fitness-image_20389309.webp",
     github: "https://github.com/Jahnavi2014/fitness-point-website",
-    demo: "http://127.0.0.1:5500/Fitness_Point_28-09-24-main/index.html",
+    demo: "https://fitness-point-website-swart.vercel.app/",
     category: "frontend",
   },
   
@@ -47,7 +47,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Python + Django" ,"SQLite"],
     image: "https://www.zohowebstatic.com/sites/zweb/images/people/zp-leave-dashboard.jpg",
     github: "https://github.com/Jahnavi2014/Staff-Leave-Management-System-Developed-in-Python-Django-and-SQLite-" ,
-    demo: "http://127.0.0.1:8000/Admin/Home",
+    demo: "https://staff-leave-management-system-developed.onrender.com",
     category: "fullstack",
   },
 ];
