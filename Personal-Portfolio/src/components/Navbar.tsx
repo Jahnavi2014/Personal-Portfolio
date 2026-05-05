@@ -67,9 +67,8 @@ export const Navbar = () => {
               </a>
             ))}
             <a
-             <a
-                href="/JAHNAVIRESUME.pdf"
-                download
+              href="public/JAHNAVIRESUME.pdf"
+              download
               className="ml-2 px-4 py-2 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold flex items-center gap-2 hover:shadow-neon transition-all"
             >
               <Download className="w-4 h-4" /> Resume
