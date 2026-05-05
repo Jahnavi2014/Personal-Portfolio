@@ -33,11 +33,14 @@ export const About = () => {
   <div className="relative aspect-square max-w-sm mx-auto">
     <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-40 animate-glow-pulse" />
     
-   <div className="relative glass-strong rounded-3xl w-full h-full flex items-center justify-center border border-white/10">
-      <span className="text-8xl md:text-9xl font-bold text-gradient">
-        J
-      </span>
-    </div>
+                <div className="relative glass-strong rounded-3xl w-full h-full overflow-hidden">
+                <img
+                  src="/public/profile.png"
+                  alt="Gangavarapu Jahnavi Chowdhary portrait"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
     
   </div>
 </Reveal>
