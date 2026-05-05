@@ -45,7 +45,7 @@ export const Navbar = () => {
       <div className="container">
         <div className={cn("glass rounded-2xl px-6 py-3 flex items-center justify-between transition-all", scrolled && "shadow-elevated")}>
           <a href="#home" className="font-mono text-lg font-bold text-gradient">
-            &lt;JC /&gt;
+            Jahnavi 
           </a>
 
           <div className="hidden md:flex items-center gap-1">
