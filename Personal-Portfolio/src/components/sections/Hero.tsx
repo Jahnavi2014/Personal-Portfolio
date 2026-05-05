@@ -7,28 +7,33 @@ export const Hero = () => {
       <div className="container">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
 
+          {/* Status badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-mono text-muted-foreground">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             Available for opportunities
           </div>
 
+          {/* Name */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
             <span className="block text-foreground">Hi, I'm</span>
             <span className="block text-gradient">Jahnavi Chowdhary</span>
           </h1>
 
+          {/* Typewriter */}
           <div className="text-2xl md:text-3xl font-mono h-12 flex items-center justify-center">
             <Typewriter words={["Full Stack Developer"]} />
           </div>
 
+          {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Motivated Full Stack Developer fresher seeking an opportunity to apply my skills 
+            Motivated Full Stack Developer fresher seeking an opportunity to apply my skills
             in developing scalable web applications and grow in a professional environment.
           </p>
 
+          {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            
-            {/* Projects Button */}
+
+            {/* Projects */}
             <a
               href="#projects"
               className="group relative px-8 py-4 rounded-xl bg-gradient-primary text-primary-foreground font-semibold overflow-hidden transition-all hover:shadow-neon hover:scale-105"
@@ -39,11 +44,10 @@ export const Hero = () => {
               </span>
             </a>
 
-            {/* ✅ FIXED Resume Button */}
+            {/* ✅ FIXED RESUME DOWNLOAD */}
             <a
               href="/JAHNAVIRESUME.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Jahnavi_Resume.pdf"
               className="px-8 py-4 rounded-xl glass-strong text-foreground font-semibold flex items-center gap-2 hover:shadow-neon-blue hover:scale-105 transition-all"
             >
               <Download className="w-4 h-4" />
@@ -52,6 +56,7 @@ export const Hero = () => {
 
           </div>
 
+          {/* Social icons */}
           <div className="flex items-center justify-center gap-4 pt-6">
             {[
               { Icon: Github, href: "https://github.com/Jahnavi2014", label: "GitHub" },
@@ -74,6 +79,7 @@ export const Hero = () => {
         </div>
       </div>
 
+      {/* Scroll arrow */}
       <a
         href="#about"
         aria-label="Scroll down"
