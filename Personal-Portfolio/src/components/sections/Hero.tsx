@@ -6,6 +6,7 @@ export const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-24 pb-12">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-mono text-muted-foreground">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             Available for opportunities
@@ -17,19 +18,17 @@ export const Hero = () => {
           </h1>
 
           <div className="text-2xl md:text-3xl font-mono h-12 flex items-center justify-center">
-            <Typewriter
-              words={[
-                "Full Stack Developer",
-              ]}
-            />
+            <Typewriter words={["Full Stack Developer"]} />
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Motivated Full Stack Developer fresher seeking an opportunity to apply my skills 
-            In developing scalable web applications and grow in a professional environment.
+            in developing scalable web applications and grow in a professional environment.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+            
+            {/* Projects Button */}
             <a
               href="#projects"
               className="group relative px-8 py-4 rounded-xl bg-gradient-primary text-primary-foreground font-semibold overflow-hidden transition-all hover:shadow-neon hover:scale-105"
@@ -39,14 +38,18 @@ export const Hero = () => {
                 <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
               </span>
             </a>
+
+            {/* ✅ FIXED Resume Button */}
             <a
-              href="public/JAHNAVIRESUME.pdf"
-              download
+              href="/JAHNAVIRESUME.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-xl glass-strong text-foreground font-semibold flex items-center gap-2 hover:shadow-neon-blue hover:scale-105 transition-all"
             >
               <Download className="w-4 h-4" />
               Download Resume
             </a>
+
           </div>
 
           <div className="flex items-center justify-center gap-4 pt-6">
@@ -67,6 +70,7 @@ export const Hero = () => {
               </a>
             ))}
           </div>
+
         </div>
       </div>
 
