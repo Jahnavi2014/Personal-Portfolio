@@ -40,7 +40,7 @@ export const Hero = () => {
               </span>
             </a>
             <a
-              href="public/JAHNAVIRESUME.PDF"
+            href="/JAHNAVIRESUME.PDF"
               download
               className="px-8 py-4 rounded-xl glass-strong text-foreground font-semibold flex items-center gap-2 hover:shadow-neon-blue hover:scale-105 transition-all"
             >
